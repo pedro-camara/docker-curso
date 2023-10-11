@@ -1,0 +1,49 @@
+/* Estilos personalizados para centralizar o conteúdo na tela */
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso define a altura para preencher a tela inteira verticalmente */
+}
+
+/* Estilize o botão usando classes do Tailwind CSS */
+.button {
+    background-color: #3490dc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2779bd;
+}
+
+/* Estilos para a animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Classe de animação personalizada para o fade-in */
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.body-login {
+    background-image: url('./img/rains-rustle.jpg');
+    background-size: 100% 100%; /* Isso fará com que a imagem cubra 100% da largura e altura da tela */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso mantém a imagem fixa na tela ao rolar */
+}
+.body-main {
+    background-image: url('./img/sec_bg.jpg');
+    background-size: 100% 100%; /* Isso fará com que a imagem cubra 100% da largura e altura da tela */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso mantém a imagem fixa na tela ao rolar */
+}
